@@ -4,10 +4,10 @@ Considere las dos clases siguientes y sus descripciones. Dibuje el diagrama UML 
 
 ## Clase: Student
 ### Atributos: 
-•	name: Nombre del estudiante 
-•	Id: Identificación escolar del estudiante 
-•	age: Edad del estudiante 
-•	gender: Género (masculino o femenino) del estudiante 
+* name: Nombre del estudiante
+* Id: Identificación escolar del estudiante
+* age: Edad del estudiante
+* gender: Género (masculino o femenino) del estudiante 
 
 ### Métodos: 
 * Student(name: String, id: int, age:int, gender:String): constructor 
