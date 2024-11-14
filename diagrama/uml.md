@@ -18,7 +18,7 @@ class Section {
     - arrayStu: Student[]
     - numStu: int 
     + Section(size: int)
-    + addStudent(st:Student)
+    + addStudent(st:Student): void
     + searchMax(): Student
     + searchMax(gender:String): Student
     + splitStudents(male: Student[], female: Student[]): int
