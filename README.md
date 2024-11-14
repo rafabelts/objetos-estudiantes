@@ -1,23 +1,31 @@
-# Práctica 1. Página web - HTML
+# Práctica (parcial). Arreglo de objetos
 
-Este proyecto requiere la creación de una página web sencilla. El resultado final debería ser similar al que se muestra en la Figura 1. 
+Considere las dos clases siguientes y sus descripciones. Dibuje el diagrama UML e implemente/codifique en Java
 
-## Instrucciones 
-1.	Crea un nuevo archivo llamado proyecto1.html en el editor de tu elección. 
-2.	Comience creando la estructura básica HTML básica 
-3.	En el cuerpo, agregue las etiquetas y el contenido como se muestra en la Figura 1 . La imagen es llamada <portada-small.jpg>, envuélvala en un elemento cuyo href esté configurado para <portada- large.jpg>(de modo que cuando el usuario haga clic en la imagen más pequeña, verá una versión más grande de la imagen). 
-4.	Para el enlace "Más información", establezca su <em>href</em> en https://www.computer.org/education
+## Clase: Student
+### Atributos: 
+•	name: Nombre del estudiante 
+•	Id: Identificación escolar del estudiante 
+•	age: Edad del estudiante 
+•	gender: Género (masculino o femenino) del estudiante 
 
-## Directrices y pruebas 
-1.	Pruebe su página en un navegador y vea si se parece a la de la Figura 1. 
-2.	Compruebe el enlace del libro (imagen portada pequeña)
-3.	Valide la página utilizando una herramienta integrada en su editor o pegando el archivo HTML en http://validator.w3.org o https://html5.validator.nu y asegúrese de que muestre un mensaje que indique que no contiene errores (Ver Figura 2. Ejemplo de validación)
+### Métodos: 
+* Student(name: String, id: int, age:int, gender:String): constructor 
+* getId(): Este método devuelve el ID del estudiante 
+* getName(): Este método devuelve el nombre del estudiante 
+* getAge(): Este método devuelve la edad del estudiante 
+* getGender(): Este método devuelve el género del estudiante 
+* display(): Este método muestra los atributos de la clase. 
 
-![image](assets/Figura1.png) 
+## Clase: Section 
+### Atributos: 
+* arrayStu: Matriz de los estudiantes
+* numStu: Número actual de estudiantes en la sección 
 
-<p><em>Figura 1. Proyecto web sencillo</em></p>
+### Métodos: 
+* Section(size:int): constructor
+* addStudent(st:Student): Este método añade un estudiante st en la sección. Este método mostrará un mensaje "Estudiante agregado" si el estudiante se agrega con éxito en la sección, de lo contrario, mostrará un mensaje "La sección de la EE está llena".
+* searchMax(): Este método devuelve el objeto Student que tiene la edad máxima en la sección.
+* searchMax(gender:String): Este método devuelve el objeto Student que tiene la edad máxima en la sección con el género gender .
+* splitStudents(male:Student[], female:Student[]): Este método almacenará a todos los estudiantes masculinos de la sección en la matriz male[] y a todos los estudiantes femeninos de la sección en la matriz female[]. Este método también devolverá el número de estudiantes female en la sección. 
 
-### Resultado de validación:
-![image](assets/Figura2.png)
-
-<p><em>Figura 2. Ejemplo de validación</em></p>
